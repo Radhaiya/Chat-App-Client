@@ -22,7 +22,7 @@ const Login = () => {
     <VStack spacing='5px' color='black'>
       <FormControl id='Email' isRequired paddingBottom='10px'>
 
-        <Input placeholder='Email' onchange={(e) => setEmail(e.target.value)} />
+        <Input placeholder='Email' onChange={(e) => setEmail(e.target.value)} />
 
       </FormControl>
 
@@ -31,7 +31,7 @@ const Login = () => {
       <FormControl id='Password' isRequired paddingBottom='10px' >
 
         <InputGroup>
-          <Input placeholder='Password' onchange={(e) => setPassword(e.target.value)} type={show ? 'text' : 'password'} />
+          <Input placeholder='Password' onChange={(e) => setPassword(e.target.value)} type={show ? 'text' : 'password'} />
           <InputRightElement width='4.5rem'>
             <Button h='1.75rem' size='sm' onClick={handleShow}>
               {show ? 'Hide' : 'Show'}
